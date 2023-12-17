@@ -1,0 +1,68 @@
+.services {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 64px 10%;
+    &__content {
+        width: 50%;
+    }
+    &__des {
+        color: gray;
+        margin-bottom: 32px;
+    }
+    &__container {
+        width: 50%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        .service {
+            &__box {
+                background: rgb(244, 243, 243);
+                border-radius: 10px;
+                width: 200px;
+                height: 150px;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            &__icon {
+                font-size: 32px;
+                background: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+            }
+            &__title {
+                font-size: 12px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .services {
+        padding: 48px 5%;
+        transition: 0.3s ease-in;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__container {
+            justify-content: center;
+        }
+    }
+    .services__container,
+    .services__content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .services {
+        padding: 64px 3%;
+        transition: 0.3s ease-in;
+    }
+}

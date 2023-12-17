@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    // font-family:;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #1cb5e0, #000851);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+section {
+    padding: 0 10%;
+}
+.section {
+    &__slogan {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bolder;
+        color: red;
+        letter-spacing: 2px;
+        margin: 10px 0;
+    }
+    &__heading {
+        font-size: 32px;
+        margin: 16px 0 34px 0;
+    }
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn {
+    &__1 {
+        border-radius: 10px;
+        background: #ada7ff;
+        color: #fff;
+    }
+    &__2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: #ada7ff;
+    }
+}

@@ -1,0 +1,60 @@
+.home {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 32px;
+    &__title {
+        font-size: 64px;
+        span {
+            color: #ada7ff;
+        }
+    }
+    &__description {
+        color: #4a4a4a;
+        margin: 16px 0;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+       
+    }
+}
+
+.home__buttons .btn__2 .btn__icon {
+    font-size: 34px;
+}
+
+.home__image img {
+    width: 100%;
+}
+
+@media  screen and (max-width: 1300px) {
+    .home {
+        padding: 15px 5%;
+        transition: 0.3s ease-in;
+        &__title {
+            font-size: 48px;
+            transition: 0.3s ease-in-out;
+        }
+        &__description {
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .home {
+        padding: 15px 3%;
+        transition: 0.3s ease-in;
+        flex-direction: column;
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+}
